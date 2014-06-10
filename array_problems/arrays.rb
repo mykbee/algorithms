@@ -30,10 +30,13 @@ module ArrayUtil
     end
   end
 
- 
-
   def self.sum_arrays(array1, array2)
-
+    x = []
+    array1.each_index do |i|
+    sum = array1[i] + array2[i]
+    x << sum
+    end
+    x 
   end
 
 end
